@@ -2,7 +2,7 @@
 //*
 // Server set at port 3000 and can be teted using http://localhost:3000
 //*
-// *******/
+// *******//
 
 const path = require('path') //It can be used to manipulate directory path
 const express = require('express')
