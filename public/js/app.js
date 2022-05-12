@@ -6,7 +6,7 @@ const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
-
+const imageLocation = document.querySelector('#image')
 // messageOne.textContent = "Javascript code"
 
 weatherForm.addEventListener('submit', (e)=>{
@@ -23,6 +23,7 @@ weatherForm.addEventListener('submit', (e)=>{
             messageOne.textContent = data.error
         } else {
             messageTwo.textContent = "Weather forecast for " + data.location + " is " + data.forecast
+            imageWeather.innerHTML = '<img src="' + data.image + '">'
             // console.log(data.location)
             // console.log(data.forecast)
         }
